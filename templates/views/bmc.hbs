@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>headlinks}}
+</head>
+<body>
+    {{>navbar}}
+<div class="container">
+    <div class="card">
+        <div class="card-header text-center">BMI CALCULATOR</div>
+        <div class="card-body"> 
+            <form class="w-50 m-auto" onsubmit="return false">
+                <div class="form-group">
+                <label for="" >Weight:</label>
+                <input required type="text" name="" id="weight" class="form-control" placeholder="Weight in Kg">
+            </div>
+                <div class="form-group">
+                <label for="" > Height :</label>
+                <input required type="text" name="" id="height" class="form-control" placeholder="Height in Ft">
+            </div>
+        <div class="form-group">
+        <label for="" >BMI Value:</label>
+        <input  DISABLED INPUTS type="text" name="" id="bmivalue" class="form-control">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-success" onclick="myfun()">Check</button>
+    </div>
+            </form>
+        </div>
+        <div class="card-footer text-center">A healthy BMI between 19 and 25</div>
+    </div>
+</div>
+{{>footer}}
+<script src="/js/bmc.js"></script>
+</body>
+</html>
